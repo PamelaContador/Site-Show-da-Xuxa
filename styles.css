@@ -1,188 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Fonte mais divertida e lúdica */
-
-:root {
-    --rosa-xuxa: #9c00c4;   /* Rosa vibrante, inspirado no tema */
-    --azul-xuxa: #b516ff;   /* Azul claro, para um toque suave */
-    --amarelo-xuxa: #750867; /* Amarelo vibrante, remete ao sol */
-    --branco-xuxa: #ffffff;  /* Branco para suavizar e iluminar */
-    --preto-xuxa: #000000;   /* Preto para contrastes fortes */
-    --fundo-alto-contraste: #111111;
-    --texto-alto-contraste: #ffffff;
-}
-
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--branco-xuxa);  /* Fundo branco para dar luminosidade */
+  font-family: Arial, sans-serif;
+  background: #efd1f3;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
-
 header {
-    background-color: var(--rosa-xuxa); /* Rosa forte no header */
-    color: var(--branco-xuxa);  /* Branco para o texto */
+  background-color: #50264c;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
-
-header a.nav-link {
-    color: var(--branco-xuxa);
-    font-weight: 600;
-}
-
-header .nav-link:hover {
-    color: var(--azul-xuxa); /* Azul para links ao passar o mouse */
-}
-
 section {
-    padding-bottom: 5rem;
+  padding: 20px;
+  text-align: center;
 }
-
-.inicio-fundo {
-    background-image: url('img/xuxa-fundo.jpg'); /* Imagem alegre e colorida */
-    background-size: cover;
-    background-position: center;
-    border-radius: 50px;
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 0 auto;
+section img {
+  width: 70%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 10px 0;
 }
-
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
+h2 {
+  color: #590464;
 }
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.botao-inicio {
-    background-color: var(--azul-xuxa);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-}
-
-.display-4 {
-    text-shadow: -5px 5px var(--amarelo-xuxa); /* Sombra amarela nas letras */
-}
-
-#showDaXuxa {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/xuxa-fundo-topo.png') top right no-repeat,
-                url('img/xuxa-fundo-baixo.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    color: var(--rosa-xuxa);
-}
-
-#showDaXuxa h2 {
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
-    font-style: normal;
-    color: var(--azul-xuxa);
-    text-align: center;
-}
-
-#galeria {
-    background-color: var(--rosa-xuxa);
-}
-
-.fundo-galeria {
-    background: url('img/xuxa-galeria-flor.png') bottom right no-repeat;
-    background-size: 180px 180px;
-}
-
-#contato {
-    background-image: url('img/xuxa-contato.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-}
-
-.formulario {
-    background-color: var(--branco-xuxa);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-}
-
-.formulario button {
-    background-color: var(--amarelo-xuxa);
-    border: none;
-    font-weight: bold;
-}
-
-.form-control {
-    background-color: var(--rosa-xuxa);
-}
-
-.menu-acessibilidade {
-    position: fixed;
-    top: 2rem;
-    right: 20px;
-    z-index: 1000;
-}
-
-.rotacao-botao {
-    transform: rotate(-90deg);
-    transform-origin: right center;
-}
-
-.opcoes-acessibilidade {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.opcoes-acessibilidade button {
-    margin-bottom: 5px;
-}
-
-.apresenta-lista {
-    display: none;
-}
-
-.alto-contraste {
-    background-color: var(--fundo-alto-contraste);
-    color: var(--texto-alto-contraste);
-}
-
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste .formulario {
-    background-color: var(--fundo-alto-contraste);
-    color: var(--texto-alto-contraste);
-}
-
-.alto-contraste .nav-link {
-    color: var(--amarelo-xuxa);
-}
-
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario button,
-.alto-contraste .btn-primary {
-    background-color: var(--amarelo-xuxa);
-    color: var(--fundo-alto-contraste);
-}
-
-.alto-contraste #showDaXuxa {
-    background: none;
-}
-
-.alto-contraste #galeria {
-    background-color: var(--fundo-alto-contraste);
-}
-
-.alto-contraste .fundo-galeria {
-    background: none;
+footer {
+  background: #33003d;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
